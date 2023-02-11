@@ -22,9 +22,9 @@ namespace PMath
             return false; //irrational roots
         }
 
-        public static Point[] Roots(double a, double b, double c)
+        /*public static Point[] Roots(double a, double b, double c)
         {
             
-        }
+        }*/
     }
 }
