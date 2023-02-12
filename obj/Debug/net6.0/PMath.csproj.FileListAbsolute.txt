@@ -1,0 +1,15 @@
+C:\Users\pixil\Desktop\PMath\bin\Debug\net6.0\PMath.exe
+C:\Users\pixil\Desktop\PMath\bin\Debug\net6.0\PMath.deps.json
+C:\Users\pixil\Desktop\PMath\bin\Debug\net6.0\PMath.runtimeconfig.json
+C:\Users\pixil\Desktop\PMath\bin\Debug\net6.0\PMath.dll
+C:\Users\pixil\Desktop\PMath\bin\Debug\net6.0\PMath.pdb
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.csproj.AssemblyReference.cache
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.AssemblyInfoInputs.cache
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.AssemblyInfo.cs
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.csproj.CoreCompileInputs.cache
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.dll
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\refint\PMath.dll
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.pdb
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\PMath.genruntimeconfig.cache
+C:\Users\pixil\Desktop\PMath\obj\Debug\net6.0\ref\PMath.dll
