@@ -21,6 +21,12 @@ namespace PMath
             return new Frac(Numerator * frac.Denominator + frac.Numerator * Denominator, common);
         }
 
+        public Frac Subtract(Frac frac)
+        {
+            int common = Denominator * frac.Denominator;
+            return new Frac(Numerator * frac.Denominator - frac.Numerator * Denominator, common);
+        }
+
         public Frac Simplify()
         {
             int gcd = Integers.EuclidGCD(Numerator, Denominator);
@@ -37,9 +43,9 @@ namespace PMath
             return $"{Numerator} / {Denominator}";
         }
 
-        public static implicit operator Frac(double d)
+        /*public static implicit operator Frac(double d)
         {
              
-        }
+        }*/
     }
 }
