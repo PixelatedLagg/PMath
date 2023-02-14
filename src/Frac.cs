@@ -15,6 +15,11 @@ namespace PMath
             return new Frac(frac.Numerator * Numerator, frac.Denominator * Denominator);
         }
 
+        public Frac Divide(Frac frac)
+        {
+            return new Frac(frac.Numerator * Denominator, frac.Denominator * Numerator);
+        }
+
         public Frac Add(Frac frac)
         {
             int common = Denominator * frac.Denominator;
