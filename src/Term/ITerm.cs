@@ -1,4 +1,4 @@
 namespace PMath
 {
-    public interface ITerm { }
+    public class Term { } //add casting for constants
 }
