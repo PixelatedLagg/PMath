@@ -1,4 +1,10 @@
 namespace PMath
 {
-    public class Term { } //add casting for constants
+    public class Term
+    {
+        public static implicit operator Term(OpType opType)
+        {
+            
+        }
+    }
 }

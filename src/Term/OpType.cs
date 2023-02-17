@@ -1,6 +1,6 @@
 namespace PMath
 {
-    public enum OperationType
+    public enum OpType
     {
         Add,
         Subtract,
