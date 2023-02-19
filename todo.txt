@@ -1,0 +1,3 @@
+-add quadratic+ table in one class
+-add quadratic formula
+-add precision for irrational and repeating doubles
