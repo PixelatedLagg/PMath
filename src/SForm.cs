@@ -13,10 +13,15 @@ namespace PMath
 
         public double Eval(double x)
         {
-            //input x into equation
+            double result = 0;
+            for (int i = Multiplicity; i > 1; i--)
+            {
+                result += Values[Values.Length - i - 1] * Math.Pow(x, i);
+            }
+            return result + Values[Values.Length - 2] * x + Values[Values.Length - 1];
         }
 
-        public SForm Inverse()
+        /*public SForm Inverse()
         {
             //calc inverse
         }
@@ -24,6 +29,6 @@ namespace PMath
         public bool? EvenOrOdd()
         {
             //calc even = true, odd = false, or neither = null
-        }
+        }*/
     }
 }

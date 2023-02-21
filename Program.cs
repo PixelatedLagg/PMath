@@ -4,7 +4,7 @@ class Program
 {
     public static void Main()
     {
-        Frac a = new Frac(3, 14);
-        Console.WriteLine(a.Add(new Frac(17, 50)));
+        SForm eq = new SForm(3, 7, 6, -4, 178);
+        Console.WriteLine(eq.Eval(6));
     }
 }
