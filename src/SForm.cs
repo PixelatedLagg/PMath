@@ -21,13 +21,9 @@ namespace PMath
             return result + Values[Values.Length - 1];
         }
 
-        /*public SForm Inverse() seems impossible
+        /*public bool? EvenOrOdd() //calc even = true, odd = false, or neither = null
         {
+
         }*/
-
-        public bool? EvenOrOdd() //calc even = true, odd = false, or neither = null
-        {
-
-        }
     }
 }
