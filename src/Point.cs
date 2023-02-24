@@ -9,5 +9,10 @@ namespace PMath
             X = x;
             Y = y;
         }
+
+        public static double DistanceBetween(Point p1, Point p2)
+        {
+            return p1;
+        }
     }
 }
