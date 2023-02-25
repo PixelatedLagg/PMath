@@ -2,3 +2,4 @@
 -add quadratic formula
 -add precision for irrational and repeating doubles
 -add distance between points
+-add limits and infinite related utilities
