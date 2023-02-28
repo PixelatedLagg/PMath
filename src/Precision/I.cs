@@ -1,0 +1,22 @@
+namespace PMath
+{
+    public struct I //equal to sqrt(-1) * x
+    {
+        public double X;
+
+        public I(double x)
+        {
+            X = x;
+        }
+
+        public static double operator *(I a, I b)
+        {
+            return a.X * b.X * -1;
+        }
+
+        public static I operator *(I a, double b)
+        {
+            return new I(a.X * b);
+        }
+    }
+}
