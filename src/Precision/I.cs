@@ -1,6 +1,6 @@
 namespace PMath
 {
-    public struct I //equal to sqrt(-1) * x
+    public class I //equal to sqrt(-1) * x
     {
         public double X;
 

@@ -17,14 +17,14 @@ namespace PMath
             double discSqrt = Math.Sqrt(disc);
             if (discSqrt - (int)discSqrt < double.Epsilon)
             {
-                return true; //rational roots
+                return true; //rational root
             }
             return false; //irrational roots
         }
 
-        /*public static Point[] Roots(double a, double b, double c)
+        public static PossibleI[] Roots(double a, double b, double c) //returns x values of all roots
         {
-            
-        }*/
+            Math.Pow(b, 2) - 4 * a * c;
+        }
     }
 }
