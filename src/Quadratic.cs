@@ -22,10 +22,10 @@ namespace PMath
             return false; //irrational roots
         }
 
-        public static PossibleI[] Roots(double a, double b, double c) //returns x values of all roots
+        /*public static PossibleI[] Roots(double a, double b, double c) //returns x values of all roots
         {
             //Math.Pow(b, 2) - 4 * a * c;
             //check if disc evals to zero for one solution
-        }
+        }*/
     }
 }
