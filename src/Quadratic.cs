@@ -26,7 +26,7 @@ namespace PMath
         {
             if (b * b - 4 * a * c == 0)
             {
-                //return one solution
+                return new PossibleI[1] { new PossibleI(-b / (2 * a)) };
             }
         }
     }
