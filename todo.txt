@@ -4,3 +4,9 @@
 -add distance between points
 -add limits and infinite related utilities
 -add imaginary operations
+
+quadratic:
+-sum of roots
+-product of roots
+-equation based off roots
+-check if equation is factorable
