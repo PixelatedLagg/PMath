@@ -29,5 +29,15 @@ namespace PMath
                 return new PossibleI[1] { new PossibleI(-b / (2 * a)) };
             }
         }
+
+        public static double SumOfRoots(double a, double b, double c)
+        {
+
+        }
+
+        public static double ProductOfRoots(double a, double b, double c)
+        {
+            
+        }
     }
 }
