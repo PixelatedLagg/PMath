@@ -30,14 +30,14 @@ namespace PMath
             }
         }
 
-        public static double SumOfRoots(double a, double b, double c)
+        public static double SumOfRoots(double a, double b)
         {
-
+            return -b / a;
         }
 
-        public static double ProductOfRoots(double a, double b, double c)
+        public static double ProductOfRoots(double a, double c)
         {
-            
+            return c / a;
         }
     }
 }
