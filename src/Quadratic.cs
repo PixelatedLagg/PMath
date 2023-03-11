@@ -39,5 +39,10 @@ namespace PMath
         {
             return c / a;
         }
+
+        public static bool IsFactorable(double a, double b, double c)
+        {
+            
+        }
     }
 }
