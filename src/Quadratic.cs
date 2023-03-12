@@ -44,5 +44,15 @@ namespace PMath
         {
             
         }
+
+        public static (double, double, double) FromRoots(double root1, double root2)
+        {
+
+        }
+
+        public static (double, double, double) FromRoot(double root)
+        {
+            
+        }
     }
 }
