@@ -28,6 +28,7 @@ namespace PMath
             {
                 return new PossibleI[1] { new PossibleI(-b / (2 * a)) };
             }
+            return new PossibleI[2] { new PossibleI((-b + Math.Sqrt(b * b - 4 * a * c)) / 2 * a), new PossibleI((-b - Math.Sqrt(b * b - 4 * a * c)) / 2 * a) };
         }
 
         public static double SumOfRoots(double a, double b)
