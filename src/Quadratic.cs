@@ -2,6 +2,11 @@ namespace PMath
 {
     public class Quadratic
     {
+        public static double Eval(double a, double b, double c, double x)
+        {
+            return a * x * x + b * x + c;
+        }
+
         public static double AxisOfSymmetry(double a, double b)
         {
             return -b / 2 * a;
