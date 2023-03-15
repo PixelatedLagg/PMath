@@ -10,3 +10,5 @@ quadratic:
 -product of roots
 -equation based off roots
 -check if equation is factorable
+
+-add interface with common standard methods
