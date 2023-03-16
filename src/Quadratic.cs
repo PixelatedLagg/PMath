@@ -2,6 +2,15 @@ namespace PMath
 {
     public class Quadratic
     {
+        public double A, B, C;
+
+        public Quadratic(double a, double b, double c)
+        {
+            A = a;
+            B = b;
+            C = c;
+        }
+
         public static double Eval(double a, double b, double c, double x)
         {
             return a * x * x + b * x + c;

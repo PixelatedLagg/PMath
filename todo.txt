@@ -12,3 +12,5 @@ quadratic:
 -check if equation is factorable
 
 -add interface with common standard methods
+
+-make all equation classes non-static objects
