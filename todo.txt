@@ -14,3 +14,14 @@ quadratic:
 -add interface with common standard methods
 
 -make all equation classes non-static objects
+
+//--------
+MAIN:
+
+add rounding irrational numbers to rational numbers
+
+make possible irrational class
+
+make possible irrational operations return possible irrational class
+
+make override methods for possible irrational operations to confirm result is rational
