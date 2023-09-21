@@ -1,6 +1,6 @@
 namespace PMath
 {
-    public class Rational : INumber
+    public class rat : INumber
     {
         
     }
