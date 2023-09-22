@@ -2,8 +2,7 @@ namespace PMath
 {
     public class pirr
     {
-        
-        public rat? Verify()
+        public ldec? Verify()
         {
             //check if value is rational
         }
