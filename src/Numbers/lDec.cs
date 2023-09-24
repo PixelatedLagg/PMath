@@ -1,8 +1,10 @@
+using System.Collections;
+
 namespace PMath
 {
-    public class ldec : rat
+    public class ldec
     {
-        private string Value = "";
+        private BitArray Bits;
 
         public ldec(int value)
         {
