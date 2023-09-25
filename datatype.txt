@@ -1,0 +1,5 @@
+ldec = highest decimal accuracy
+lnum = highest whole accuracy
+
+pirr = possible irrational
+irr = irrational, stored as operation to be conducted later

@@ -1,6 +1,6 @@
 namespace PMath
 {
-    public interface num
+    public class lnum
     {
         
     }

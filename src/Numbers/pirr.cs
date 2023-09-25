@@ -1,6 +1,6 @@
 namespace PMath
 {
-    public class pirr
+    public class pirr : num
     {
         public ldec? Verify()
         {

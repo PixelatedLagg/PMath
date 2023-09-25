@@ -2,7 +2,7 @@ using System.Collections;
 
 namespace PMath
 {
-    public class ldec
+    public class ldec : num
     {
         private BitArray Bits;
 
