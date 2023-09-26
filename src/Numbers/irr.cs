@@ -2,9 +2,8 @@ namespace PMath
 {
     public class irr : num
     {
-        num Left;
-        num Right;
-        num Root;
+        num Value;
+        ldec Root;
 
         public irr(num left, num right)
         {

@@ -2,7 +2,15 @@ namespace PMath
 {
     public class pirr : num
     {
-        public ldec? Verify()
+        num Value;
+        ldec Root;
+        
+        public irr? VerifyIrr()
+        {
+            //check if value is rational
+        }
+
+        public ldec? VerifyRat()
         {
             //check if value is rational
         }

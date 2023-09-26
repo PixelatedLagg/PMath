@@ -1,6 +1,6 @@
 namespace PMath
 {
-    public class lnum
+    public class lnum : num
     {
         
     }
