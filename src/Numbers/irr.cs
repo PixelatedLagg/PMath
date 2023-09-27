@@ -2,7 +2,7 @@ namespace PMath
 {
     public class irr : num
     {
-        num Value;
+        /*num Value;
         ldec Root;
 
         public irr(num left, num right)
@@ -14,6 +14,6 @@ namespace PMath
         public ldec Eval(int precision)
         {
             //return operation with certain digits of precision after decimal point
-        }
+        }*/
     }
 }

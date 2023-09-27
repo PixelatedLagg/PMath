@@ -5,7 +5,7 @@ namespace PMath
         num Value;
         ldec Root;
         
-        public irr? VerifyIrr()
+        /*public irr? VerifyIrr()
         {
             //check if value is rational
         }
@@ -13,6 +13,6 @@ namespace PMath
         public ldec? VerifyRat()
         {
             //check if value is rational
-        }
+        }*/
     }
 }
