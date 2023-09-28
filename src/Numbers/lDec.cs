@@ -32,39 +32,28 @@ namespace PMath
         //need to fix bugs - very important!
         public static ldec operator +(ldec a, ldec b)
         {
-            var aLength = a.Bits.Length - 1;
-            var bLength = b.Bits.Length - 1;
-            var stack = new Stack<int>();
-            var carry = 0;
-            while (aLength >= 0 || bLength >= 0)
+            BitArray carry = And(a.Bits, b.Bits), result = Xor(a.Bits, b.Bits);
+            Console.WriteLine("aids!");
+            while (carry.Length != 1)
             {
-                var aValue = 0;
-                var bValue = 0;
-                if (aLength >= 0)
-                {
-                    aValue = Convert.ToInt32(a.Bits[aLength--]);
-                }
-                if (bLength >= 0)
-                {
-                    bValue = Convert.ToInt32(b.Bits[bLength--]);
-                }
-                var sum = carry + aValue + bValue;
-                carry = sum / 2;
-                var digit = sum % 2;
-                stack.Push(digit);
-            }
-            if (carry > 0)
-            {
-                stack.Push(carry);
-            }
-            BitArray result = new BitArray(stack.Count);
-            while (stack.Count > 0)
-            {
-                result.Set(result.Length - stack.Count, stack.Peek() == 1);
-                stack.Pop();
+                BitArray shiftedCarry = Left(carry, 1);
+                carry = And(result, shiftedCarry);
+                result = Xor(result, shiftedCarry);
             }
             return new ldec() { Bits = result };
         }
+
+        private static BitArray And(BitArray a, BitArray b) => a.And(b);
+
+        private static BitArray Xor(BitArray a, BitArray b) => a.Xor(b);
+
+        private static BitArray Or(BitArray a, BitArray b) => a.Or(b);
+
+        private static BitArray Not(BitArray a) => a.Not();
+
+        private static BitArray Left(BitArray a, int b) => a.LeftShift(b);
+
+        private static BitArray Right(BitArray a, int b) => a.RightShift(b);
 
         /*public static ldec operator -(ldec a, ldec b)
         {
