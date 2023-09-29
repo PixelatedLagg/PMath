@@ -28,7 +28,6 @@ namespace PMath
             }
         }
 
-        //ported from https://www.programmingnotes.org/7818/cs-how-to-add-two-binary-strings-using-cs/
         //need to fix bugs - very important!
         public static ldec operator +(ldec a, ldec b)
         {
@@ -90,11 +89,17 @@ namespace PMath
         public static pirr operator /(int a, ldec b)
         {
             //divide (return possible irrational)
-        }
+        }*/
 
+        //idea: storing algo progress as string to eventually return
         public override string ToString()
         {
-            //return string
-        }*/
+            string result = "";
+            /*n = 0
+            for d in digits:
+                n = 10 * n + d
+            return n*/
+            return result;
+        }
     }
 }
