@@ -1,19 +1,21 @@
+using System.Numerics;
+
 namespace PMath
 {
-    public class irr : num
+    public class Irr
     {
-        /*num Value;
-        ldec Root;
+        BigFloat Value;
+        BigFloat Root;
 
-        public irr(num left, num right)
+        public Irr(BigFloat value, BigFloat root)
         {
-            Left = left;
-            Right = right;
+            Value = value;
+            Root = root;
         }
 
-        public ldec Eval(int precision)
+        public BigFloat Eval(BigInteger precision)
         {
             //return operation with certain digits of precision after decimal point
-        }*/
+        }
     }
 }

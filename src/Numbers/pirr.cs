@@ -1,18 +1,24 @@
 namespace PMath
 {
-    public class pirr : num
+    public class Pirr
     {
-        num Value;
-        ldec Root;
+        BigFloat Value;
+        BigFloat Root;
+
+        internal Pirr(BigFloat value, BigFloat root)
+        {
+            Value = value;
+            Root = root;
+        }
         
-        /*public irr? VerifyIrr()
+        public Irr? VerifyIrr()
         {
             //check if value is rational
         }
 
-        public ldec? VerifyRat()
+        public BigFloat? VerifyRat()
         {
             //check if value is rational
-        }*/
+        }
     }
 }

@@ -23,14 +23,12 @@ namespace PMath
         {
             get
             {
-                switch(numerator.Sign + denominator.Sign) {
-                    case 2: case -2:
-                        return 1;
-                    case 0:
-                        return -1;
-                    default:
-                        return 0;
-                }
+                return (numerator.Sign + denominator.Sign) switch
+                {
+                    2 or -2 => 1,
+                    0 => -1,
+                    _ => 0,
+                };
             }
         }
 
@@ -107,7 +105,7 @@ namespace PMath
         public BigFloat Add(BigFloat other)
         {
             if (BigFloat.Equals(other, null))
-                throw new ArgumentNullException("other");
+                throw new ArgumentNullException(nameof(other));
 
             this.numerator = this.numerator * other.denominator + other.numerator * this.denominator;
             this.denominator *= other.denominator;
@@ -116,7 +114,7 @@ namespace PMath
         public BigFloat Subtract(BigFloat other)
         {
             if (BigFloat.Equals(other, null))
-                throw new ArgumentNullException("other");
+                throw new ArgumentNullException(nameof(other));
 
             this.numerator = this.numerator * other.denominator - other.numerator * this.denominator;
             this.denominator *= other.denominator;
@@ -125,7 +123,7 @@ namespace PMath
         public BigFloat Multiply(BigFloat other)
         {
             if (BigFloat.Equals(other, null))
-                throw new ArgumentNullException("other");
+                throw new ArgumentNullException(nameof(other));
 
             this.numerator *= other.numerator;
             this.denominator *= other.denominator;
@@ -134,7 +132,7 @@ namespace PMath
         public BigFloat Divide(BigFloat other)
         {
             if (BigInteger.Equals(other,null)) 
-                throw new ArgumentNullException("other");
+                throw new ArgumentNullException(nameof(other));
             if (other.numerator == 0) 
                 throw new System.DivideByZeroException("other");
 
@@ -145,7 +143,7 @@ namespace PMath
         public BigFloat Remainder(BigFloat other)
         {
             if (BigInteger.Equals(other, null))
-                throw new ArgumentNullException("other");
+                throw new ArgumentNullException(nameof(other));
 
             //b = a mod n
             //remainder = a - floor(a/n) * n
@@ -293,8 +291,7 @@ namespace PMath
         {
             Factor();
 
-            BigInteger remainder;
-            BigInteger result = BigInteger.DivRem(numerator, denominator, out remainder);
+            BigInteger result = BigInteger.DivRem(numerator, denominator, out BigInteger remainder);
 
             if (remainder == 0 && trailingZeros)
                 return result + ".0";
@@ -328,8 +325,7 @@ namespace PMath
         {
             Factor();
 
-            BigInteger remainder;
-            BigInteger result = BigInteger.DivRem(numerator, denominator, out remainder);
+            BigInteger result = BigInteger.DivRem(numerator, denominator, out BigInteger remainder);
 
             if (remainder == 0)
                 return result.ToString();
@@ -343,10 +339,10 @@ namespace PMath
 
             return numerator + " / " + denominator;
         }
-        public int CompareTo(BigFloat other)
+        public int CompareTo(BigFloat? other)
         {
-            if (BigFloat.Equals(other, null))
-                throw new ArgumentNullException("other");
+            if (BigFloat.Equals(other ?? throw new NullReferenceException(), null))
+                throw new ArgumentNullException(nameof(other));
 
             //Make copies
             BigInteger one = this.numerator;
@@ -359,17 +355,17 @@ namespace PMath
             //test
             return BigInteger.Compare(one, two);
         }
-        public int CompareTo(object other)
+        public int CompareTo(object? other)
         {
             if (other == null)
-                throw new ArgumentNullException("other");
+                throw new ArgumentNullException(nameof(other));
 
             if (!(other is BigFloat)) 
                 throw new System.ArgumentException("other is not a BigFloat");
 
             return CompareTo((BigFloat)other);
         }
-        public override bool Equals(object other)
+        public override bool Equals(object? other)
         {
             if (other == null || GetType() != other.GetType())
             {
@@ -378,9 +374,9 @@ namespace PMath
 
             return this.numerator == ((BigFloat)other).numerator && this.denominator == ((BigFloat)other).denominator;
         }
-        public bool Equals(BigFloat other)
+        public bool Equals(BigFloat? other)
         {
-            return (other.numerator == this.numerator && other.denominator == this.denominator);
+            return (other?.numerator == this.numerator && other.denominator == this.denominator);
         }
 
         public override int GetHashCode()
@@ -389,7 +385,7 @@ namespace PMath
         }
 
         //static methods
-        public static bool Equals(object left, object right)
+        public static new bool Equals(object left, object? right)
         {
             if (left == null && right == null) return true;
             else if (left == null || right == null) return false;
@@ -503,7 +499,7 @@ namespace PMath
         {
             return (new BigFloat(value)).ShiftDecimalRight(shift);
         }
-        public static bool TryParse(string value, out BigFloat result) 
+        public static bool TryParse(string value, out BigFloat? result) 
         {
             try
             {
@@ -524,9 +520,9 @@ namespace PMath
         public static int Compare(BigFloat left, BigFloat right)
         {
             if (BigFloat.Equals(left, null))
-                throw new ArgumentNullException("left");
+                throw new ArgumentNullException(nameof(left));
             if (BigFloat.Equals(right, null))
-                throw new ArgumentNullException("right");
+                throw new ArgumentNullException(nameof(right));
 
             return (new BigFloat(left)).CompareTo(right);
         }
