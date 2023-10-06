@@ -2,19 +2,24 @@ using System.Numerics;
 
 namespace PMath.Statistics
 {
-    public class QSet<T> where T : int, double
+    public class QSet32
     {
-        public List<T> Data = new List<T>();
+        public List<int> Data = new();
         public string Name;
 
-        public QSet(string name)
+        public QSet32(string name)
         {
             Name = name;
         }
 
         public double Mean()
         {
-            
+            int total = 0;
+            foreach (int i in Data)
+            {
+                total += i;
+            }
+            return total / Data.Count;
         }
     }
 }
