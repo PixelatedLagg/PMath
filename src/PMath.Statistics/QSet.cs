@@ -2,12 +2,17 @@ namespace PMath.Statistics
 {
     public class QSet32
     {
-        public List<int> Data = new();
+        private readonly List<int> Data = new();
+        public int Count => Data.Count;
+        public int[] ToArray => Data.ToArray();
+        public int Max => Data.Max();
+        public int Min => Data.Min();
         public string Name;
 
         public QSet32(string name, params int[] data)
         {
             Name = name;
+            Array.Sort(data);
             Data.AddRange(data);
         }
 
@@ -21,6 +26,15 @@ namespace PMath.Statistics
             return total / Data.Count;
         }
 
+        public double Median()
+        {
+            if (Data.Count % 2 != 0)
+            {
+                return Data[Data.Count / 2];
+            }
+            return (Data[(Data.Count - 1) / 2] + Data[Data.Count / 2]) / 2.0;
+        }
+
         public double StdDev()
         {
             double mean = Mean();
@@ -31,5 +45,7 @@ namespace PMath.Statistics
             }
             return Math.Sqrt(sum / Data.Count);
         }
+
+        public double Variance() => Math.Pow(StdDev(), 2);
     }
 }

@@ -18,6 +18,8 @@ quadratic:
 //--------
 MAIN:
 
+FIX INACCURACIES IN STATS
+
 add rounding irrational numbers to rational numbers
 
 make possible irrational class
