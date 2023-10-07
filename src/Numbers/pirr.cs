@@ -11,7 +11,7 @@ namespace PMath
             Root = root;
         }
         
-        public Irr? VerifyIrr()
+        /*public Irr? VerifyIrr()
         {
             //check if value is rational
         }
@@ -19,6 +19,6 @@ namespace PMath
         public BigFloat? VerifyRat()
         {
             //check if value is rational
-        }
+        }*/
     }
 }

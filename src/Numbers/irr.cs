@@ -7,7 +7,7 @@ namespace PMath
         BigFloat Value;
         BigFloat Root;
 
-        public Irr(BigFloat value, BigFloat root)
+        /*public Irr(BigFloat value, BigFloat root)
         {
             Value = value;
             Root = root;
@@ -16,6 +16,6 @@ namespace PMath
         public BigFloat Eval(BigInteger precision)
         {
             //return operation with certain digits of precision after decimal point
-        }
+        }*/
     }
 }

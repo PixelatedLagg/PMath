@@ -1,5 +1,3 @@
-using System.Numerics;
-
 namespace PMath.Statistics
 {
     public class QSet32
@@ -7,9 +5,10 @@ namespace PMath.Statistics
         public List<int> Data = new();
         public string Name;
 
-        public QSet32(string name)
+        public QSet32(string name, params int[] data)
         {
             Name = name;
+            Data.AddRange(data);
         }
 
         public double Mean()
@@ -20,6 +19,17 @@ namespace PMath.Statistics
                 total += i;
             }
             return total / Data.Count;
+        }
+
+        public double StdDev()
+        {
+            double mean = Mean();
+            double sum = 0;
+            foreach (int i in Data)
+            {
+                sum += (i - mean) * (i - mean);
+            }
+            return Math.Sqrt(sum / Data.Count);
         }
     }
 }

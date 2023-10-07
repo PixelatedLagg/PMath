@@ -4,11 +4,11 @@ namespace PMath
 {
     public static class Integers
     {
-        public static BigInteger EuclidGCD(BigInteger a, BigInteger b)
+        public static int EuclidGCD32(int a, int b)
         {
             while (b > 0)
             {
-                BigInteger remainder = a % b;
+                int remainder = a % b;
                 a = b;
                 b = remainder;
             }

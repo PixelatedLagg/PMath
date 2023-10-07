@@ -34,13 +34,13 @@ namespace PMath
 
         public Frac Simplify()
         {
-            int gcd = Integers.EuclidGCD(Numerator, Denominator);
+            int gcd = Integers.EuclidGCD32(Numerator, Denominator);
             return new Frac(Numerator / gcd, Denominator / gcd);
         }
 
         public bool CanSimplify()
         {
-            return Integers.EuclidGCD(Numerator, Denominator) != 1;
+            return Integers.EuclidGCD32(Numerator, Denominator) != 1;
         }
 
         public override string ToString()
