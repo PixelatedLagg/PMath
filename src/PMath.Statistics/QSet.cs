@@ -5,8 +5,6 @@ namespace PMath.Statistics
         private readonly List<int> Data = new();
         public int Count => Data.Count;
         public int[] ToArray => Data.ToArray();
-        public int Max => Data.Max();
-        public int Min => Data.Min();
         public string Name;
 
         public QSet32(string name, params int[] data)
@@ -34,6 +32,20 @@ namespace PMath.Statistics
             }
             return (Data[(Data.Count - 1) / 2] + Data[Data.Count / 2]) / 2.0;
         }
+
+        public double Q1()
+        {
+
+        }
+
+        public double Q3()
+        {
+            
+        }
+
+        public int Max() => Data.Max();
+        
+        public int Min() => Data.Min();
 
         public double StdDev()
         {
