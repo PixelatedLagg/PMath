@@ -43,6 +43,10 @@ namespace PMath.Statistics
             
         }
 
+        public double Range() => Data.Max() - Data.Min();
+
+        public double IQR() => Q3() - Q1();
+
         public int Max() => Data.Max();
         
         public int Min() => Data.Min();
