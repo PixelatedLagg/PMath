@@ -63,5 +63,6 @@ namespace PMath.Statistics
         }
 
         public double Variance() => Math.Pow(StdDev(), 2);
+        public string QuickSummary() => $"Min: {Min()}, Q1: {Q1()}, Med: {Median()}, Q3: {Q3()}, Max: {Max()}";
     }
 }
