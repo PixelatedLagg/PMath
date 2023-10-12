@@ -35,7 +35,12 @@ namespace PMath.Statistics
 
         public double Q1()
         {
-
+            int median = Data.IndexOf(Median());
+            if (Data.Count % 2 != 0)
+            {
+                return Data[Data.Count / 2];
+            }
+            return (Data[(Data.Count - 1) / 2] + Data[Data.Count / 2]) / 2.0;
         }
 
         public double Q3()
