@@ -35,17 +35,12 @@ namespace PMath.Statistics
 
         public double Q1()
         {
-            if (Data.Count % 4 == 0)
-            {
-                return Data[Data.Count / 4 - 1];
-            }
-            float quotient = Data.Count / 4f;
-            return (Data[(int)Math.Floor(quotient) - 1] + Data[(int)Math.Ceiling(quotient) - 1]) / 2;
+            return (Data[(int)Math.Floor(Data.Count / 4.0) - 1] + Data[(int)Math.Floor(Data.Count / 4.0)]) / 2.0;
         }
 
         public double Q3()
         {
-            
+            return (Data[(int)Math.Ceiling(Data.Count / 4.0) * 3 + 1] + Data[(int)Math.Ceiling(Data.Count / 4.0) * 3]) / 2.0;
         }
 
         public double Range() => Data.Max() - Data.Min();
