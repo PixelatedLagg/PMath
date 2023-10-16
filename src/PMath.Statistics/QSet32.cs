@@ -21,7 +21,7 @@ namespace PMath.Statistics
             {
                 total += i;
             }
-            return total / Data.Count;
+            return total / (double)Data.Count;
         }
 
         public double Median()
@@ -35,12 +35,12 @@ namespace PMath.Statistics
 
         public double Q1()
         {
-            return (Data[(int)Math.Floor(Data.Count / 4.0) - 1] + Data[(int)Math.Floor(Data.Count / 4.0)]) / 2.0;
+            return (Data[(int)Math.Floor(Data.Count * 0.25) - 1] + Data[(int)Math.Floor(Data.Count * 0.25)]) / 2.0;
         }
 
         public double Q3()
         {
-            return (Data[(int)Math.Ceiling(Data.Count / 4.0) * 3 + 1] + Data[(int)Math.Ceiling(Data.Count / 4.0) * 3]) / 2.0;
+            return (Data[(int)Math.Ceiling(Data.Count * 0.75) - 1] + Data[(int)Math.Ceiling(Data.Count * 0.75)]) / 2.0;
         }
 
         public double Range() => Data.Max() - Data.Min();
@@ -59,10 +59,10 @@ namespace PMath.Statistics
             {
                 sum += (i - mean) * (i - mean);
             }
-            return Math.Sqrt(sum / Data.Count);
+            return Math.Sqrt(sum / (Data.Count - 1));
         }
 
         public double Variance() => Math.Pow(StdDev(), 2);
-        public string QuickSummary() => $"Min: {Min()}, Q1: {Q1()}, Med: {Median()}, Q3: {Q3()}, Max: {Max()}";
+        public string QuickSummary() => $"N: {Data.Count}, Mean: {Mean()}, SD: {StdDev()}, Min: {Data.Min()}, Q1: {Q1()}, Med: {Median()}, Q3: {Q3()}, Max: {Data.Max()}";
     }
 }
