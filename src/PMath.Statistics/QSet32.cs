@@ -64,5 +64,17 @@ namespace PMath.Statistics
 
         public double Variance() => Math.Pow(StdDev(), 2);
         public string QuickSummary() => $"N: {Data.Count}, Mean: {Mean()}, SD: {StdDev()}, Min: {Data.Min()}, Q1: {Q1()}, Med: {Median()}, Q3: {Q3()}, Max: {Data.Max()}";
+
+        public bool IsOutlier(int value) => IsOutlierIQR(value) && IsOutlierStdDev(value);
+
+        public bool IsOutlierIQR(int value)
+        {
+
+        }
+
+        public bool IsOutlierStdDev(int value)
+        {
+
+        }
     }
 }

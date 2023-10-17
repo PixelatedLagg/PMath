@@ -25,10 +25,6 @@ CALCULATE OUTLIERS FROM 2 STDDEV
 
 CALCULATE IF DATA IS SKEWED FROM COMMON ALGO
 
-FIX STDDEV OR VARIANCE (/n - 1)
-
-FIX INACCURACIES IN STATS
-
 add rounding irrational numbers to rational numbers
 
 make possible irrational class
