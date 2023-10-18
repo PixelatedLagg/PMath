@@ -62,12 +62,19 @@ namespace PMath.Statistics
             return Math.Sqrt(sum / (Data.Count - 1));
         }
 
+        public int Mode()
+        {
+            var groups = Data.GroupBy(v => v);
+            int maxCount = groups.Max(g => g.Count());
+            return groups.First(g => g.Count() == maxCount).Key;
+        }
+
         public double Variance() => Math.Pow(StdDev(), 2);
         public string QuickSummary() => $"N: {Data.Count}, Mean: {Mean()}, SD: {StdDev()}, Min: {Data.Min()}, Q1: {Q1()}, Med: {Median()}, Q3: {Q3()}, Max: {Data.Max()}";
 
         public bool IsOutlier(int value) => IsOutlierIQR(value) && IsOutlierStdDev(value);
 
-        public bool IsOutlierIQR(int value)
+        /*public bool IsOutlierIQR(int value)
         {
 
         }
@@ -75,6 +82,6 @@ namespace PMath.Statistics
         public bool IsOutlierStdDev(int value)
         {
 
-        }
+        }*/
     }
 }
