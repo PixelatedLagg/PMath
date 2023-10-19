@@ -74,14 +74,11 @@ namespace PMath.Statistics
 
         public bool IsOutlier(int value) => IsOutlierIQR(value) && IsOutlierStdDev(value);
 
-        /*public bool IsOutlierIQR(int value)
+        public bool IsOutlierIQR(int value)
         {
 
         }
 
-        public bool IsOutlierStdDev(int value)
-        {
-
-        }*/
+        public bool IsOutlierStdDev(int value) => Math.Abs(value - Mean()) / StdDev() > 2;
     }
 }
