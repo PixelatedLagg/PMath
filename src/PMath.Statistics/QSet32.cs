@@ -76,7 +76,8 @@ namespace PMath.Statistics
 
         public bool IsOutlierIQR(int value)
         {
-
+            double iqr = IQR();
+            return value > iqr * 1.5 + Q3() || value < iqr * 1.5 - Q1();
         }
 
         public bool IsOutlierStdDev(int value) => Math.Abs(value - Mean()) / StdDev() > 2;
