@@ -94,5 +94,7 @@ namespace PMath.Statistics
         }
 
         public bool IsOutlierStdDev(int value) => Math.Abs(value - Mean()) / StdDev() > 2;
+
+        public bool IsSymmetric(int precision) => Utilities.Roughly(Q1() - Min(), Max() - Q3(), precision) && Utilities.Roughly(Median() - Q1(), Q3() - Median(), precision);
     }
 }
