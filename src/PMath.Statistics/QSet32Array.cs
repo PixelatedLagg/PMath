@@ -8,5 +8,10 @@ namespace PMath.Statistics
         {
             Sets.AddRange(sets);
         }
+
+        public Linear ToLinear()
+        {
+            //x, y linear calc
+        }
     }
 }
