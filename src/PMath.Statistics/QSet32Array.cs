@@ -2,16 +2,11 @@ namespace PMath.Statistics
 {
     public class QSet32Array
     {
-        List<QSet32> Sets = new();
+        public readonly List<QSet32> Sets = new();
 
-        public Q2Set32(params QSet32[] sets)
+        public QSet32Array(params QSet32[] sets)
         {
             Sets.AddRange(sets);
-        }
-
-        public Linear ToLinear()
-        {
-            //x, y linear calc
         }
     }
 }
