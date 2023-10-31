@@ -1,10 +1,8 @@
-using System.Numerics;
-
 namespace PMath.Statistics
 {
     public static class XYSet32
     {
-        public static Linear ToLinear(QSet32 x, QSet32 y)
+        public static Linear LinearBestFit(QSet32 x, QSet32 y)
         {
             if (x.Count != y.Count)
             {
