@@ -10,6 +10,11 @@ namespace PMath
             B = b;
         }
 
+        public Linear Inverse()
+        {
+            //inverse code
+        }
+
         public double Input(double x) => x * M + B;
         public double Input(int x) => x * M + B;
     }
