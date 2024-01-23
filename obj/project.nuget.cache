@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "p5zOleWcI0ZmWR5MBDhTcgqZz9TQ6SHwpsJ3t78S/sdwSXslNvj8xdIGz2QTP5jpSaUv02B7i13Uw9uD7Qb6Vw==",
+  "dgSpecHash": "I8lDaNDyYdlY3BNEZqWwVHh7ZBo81Cs63anxo53/5MBF1y+dk75hSJygg8o8qOgBEM7Rru3zbQkqp6CXJayijg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pixil\\Desktop\\PMath\\PMath.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\William\\Desktop\\PMath\\PMath.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
