@@ -2,14 +2,6 @@ namespace PMath
 {
     public class Pirr
     {
-        BigFloat Value;
-        BigFloat Root;
-
-        internal Pirr(BigFloat value, BigFloat root)
-        {
-            Value = value;
-            Root = root;
-        }
         
         /*public Irr? VerifyIrr()
         {

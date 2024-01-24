@@ -4,8 +4,6 @@ namespace PMath
 {
     public class Irr
     {
-        BigFloat Value;
-        BigFloat Root;
 
         /*public Irr(BigFloat value, BigFloat root)
         {

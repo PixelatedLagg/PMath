@@ -37,6 +37,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "ExtendedNumerics.BigDecimal": {
+              "target": "Package",
+              "version": "[2023.1000.3.328, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

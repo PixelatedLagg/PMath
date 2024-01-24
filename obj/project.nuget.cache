@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "I8lDaNDyYdlY3BNEZqWwVHh7ZBo81Cs63anxo53/5MBF1y+dk75hSJygg8o8qOgBEM7Rru3zbQkqp6CXJayijg==",
+  "dgSpecHash": "kF4g7MYFcZDjPJs/kQgdHEBGF9TYzTuOD/OeUgOfindPkwUM/So0kQZU5iXml29caio51qYNFsaFeHMktD5xMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\William\\Desktop\\PMath\\PMath.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\William\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\William\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\William\\.nuget\\packages\\extendednumerics.bigdecimal\\2023.1000.3.328\\extendednumerics.bigdecimal.2023.1000.3.328.nupkg.sha512",
     "C:\\Users\\William\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\William\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512",
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\William\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512"
   ],
   "logs": []
 }

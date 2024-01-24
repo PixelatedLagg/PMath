@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PMath/1.0.0": {
+        "dependencies": {
+          "ExtendedNumerics.BigDecimal": "2023.1000.3.328"
+        },
+        "runtime": {
+          "PMath.dll": {}
+        }
+      },
+      "ExtendedNumerics.BigDecimal/2023.1000.3.328": {
+        "runtime": {
+          "lib/net6.0/ExtendedNumerics.BigDecimal.dll": {
+            "assemblyVersion": "2023.1000.3.328",
+            "fileVersion": "2023.1000.3.328"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PMath/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExtendedNumerics.BigDecimal/2023.1000.3.328": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jx72lrIoz3YjN1E0iGidTfX/r05ngMpJ6uMu1DnkL+CymUIcuPT73HYNCx7+Tc2H1nL/cgu3xIv+aPmtWtG6vg==",
+      "path": "extendednumerics.bigdecimal/2023.1000.3.328",
+      "hashPath": "extendednumerics.bigdecimal.2023.1000.3.328.nupkg.sha512"
+    }
+  }
+}
