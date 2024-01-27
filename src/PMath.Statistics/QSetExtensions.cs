@@ -508,17 +508,101 @@ namespace PMath.Statistics
             }
             return outliers.ToArray();
         }
-        public static double SymmetricQ(this IEnumerable<int> data, bool sort = true) => (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
-        public static double SymmetricQ(this IEnumerable<double> data, bool sort = true) => (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
-        public static decimal SymmetricQ(this IEnumerable<decimal> data, bool sort = true) => (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
-        public static float SymmetricQ(this IEnumerable<float> data, bool sort = true) => (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
-        public static BigDecimal SymmetricQ(this IEnumerable<BigInteger> data, bool sort = true) => (BigDecimal.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + BigDecimal.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
-        public static BigDecimal SymmetricQ(this IEnumerable<BigDecimal> data, bool sort = true) => (BigDecimal.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + BigDecimal.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
-        public static double SymmetricMean(this IEnumerable<int> data, bool sort = true) => Math.Abs(data.Average() - data.Median(false));
-        public static double SymmetricMean(this IEnumerable<double> data, bool sort = true) => Math.Abs(data.Average() - data.Median(false));
-        public static decimal SymmetricMean(this IEnumerable<decimal> data, bool sort = true) => Math.Abs(data.Average() - data.Median(false));
-        public static float SymmetricMean(this IEnumerable<float> data, bool sort = true) => Math.Abs(data.Average() - data.Median(false));
-        public static BigDecimal SymmetricMean(this IEnumerable<BigInteger> data, bool sort = true) => BigDecimal.Abs(data.Average() - data.Median(false));
-        public static BigDecimal SymmetricMean(this IEnumerable<BigDecimal> data, bool sort = true) => BigDecimal.Abs(data.Average() - data.Median(false));
+        public static double SymmetricQ(this IEnumerable<int> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
+        }
+        public static double SymmetricQ(this IEnumerable<double> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
+        }
+        public static decimal SymmetricQ(this IEnumerable<decimal> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
+        }
+        public static float SymmetricQ(this IEnumerable<float> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return (Math.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + Math.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
+        }
+        public static BigDecimal SymmetricQ(this IEnumerable<BigInteger> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return (BigDecimal.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + BigDecimal.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
+        }
+        public static BigDecimal SymmetricQ(this IEnumerable<BigDecimal> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return (BigDecimal.Abs(data.Q1(false) - data.Min() - data.Max() + data.Q3(false)) + BigDecimal.Abs(data.Median(false) - data.Q1(false) - data.Q3(false) + data.Median(false))) / 2;
+        }
+        public static double SymmetricMean(this IEnumerable<int> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return Math.Abs(data.Average() - data.Median(false));
+        }
+        public static double SymmetricMean(this IEnumerable<double> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return Math.Abs(data.Average() - data.Median(false));
+        }
+        public static decimal SymmetricMean(this IEnumerable<decimal> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return Math.Abs(data.Average() - data.Median(false));
+        }
+        public static float SymmetricMean(this IEnumerable<float> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return Math.Abs(data.Average() - data.Median(false));
+        }
+        public static BigDecimal SymmetricMean(this IEnumerable<BigInteger> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return BigDecimal.Abs(data.Average() - data.Median(false));
+        }
+        public static BigDecimal SymmetricMean(this IEnumerable<BigDecimal> data, bool sort = true)
+        {
+            if (sort)
+            {
+                data = data.OrderBy(x => x);
+            }
+            return BigDecimal.Abs(data.Average() - data.Median(false));
+        }
     }
 }
