@@ -1,3 +1,4 @@
+using System.Numerics;
 using ExtendedNumerics;
 
 namespace PMath
@@ -16,5 +17,48 @@ namespace PMath
         public static BigDecimal Csch(double ce) => 1 / BigDecimal.Sinh(BigDecimal.GetPiDigits(BigDecimal.Precision) * ce);
         public static BigDecimal Sech(double ce) => BigDecimal.Sech(BigDecimal.GetPiDigits(BigDecimal.Precision) * ce);
         public static BigDecimal Coth(double ce) => BigDecimal.Coth(BigDecimal.GetPiDigits(BigDecimal.Precision) * ce);
+        public static BigDecimal Arctan(BigInteger i)
+        {
+            BigDecimal pi = 0.0;
+
+            for (BigInteger k = 0; k < i; ++k)
+            {
+                BigDecimal term = (k % 2 == 0 ? 1.0 : -1.0) / (2 * k + (BigDecimal)1);
+                pi += term;
+            }
+
+            return pi * 4;
+        }
+
+        public static BigDecimal Taylor(BigInteger i)
+        {
+            double tanPiOver4 = 1.0;
+
+            for (int n = 1; n < i; ++n)
+            {
+                double term = Math.Pow(-1, n) * (Math.Pow(2, 2 * n - 1) * Factorial(2 * n - 1)) / (2 * n - 1);
+                tanPiOver4 += term;
+            }
+
+            return 4 * tanPiOver4;
+        }
+
+        static double Factorial(int n)
+        {
+            if (n == 0 || n == 1)
+            {
+                return 1;
+            }
+
+            double result = 1;
+            for (int i = 2; i <= n; ++i)
+            {
+                result *= i;
+            }
+
+            return result;
+        }
+
+
     }
 }

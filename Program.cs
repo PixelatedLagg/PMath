@@ -7,8 +7,10 @@ class Program
 {
     public static void Main()
     {
-        BigInteger b = BigInteger.Parse("5.50262215981e+57", NumberStyles.AllowDecimalPoint | NumberStyles.AllowExponent); //45!
-        Console.WriteLine(b.ReverseFactorial());
-        
+        Console.WriteLine(test(10, 10));
+    }
+    static int test(int x, int y)
+    {
+        return (int)((x * (Math.Pow(10, y) - 1)) / 9);
     }
 }
