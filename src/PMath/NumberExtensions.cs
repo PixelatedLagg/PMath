@@ -18,6 +18,20 @@ namespace PMath
             return res;
         }
 
+        public static BigInteger BigFactorial(this int x)
+        {
+            if (x == 0)
+            {
+                return 1;
+            }
+            BigInteger res = 1;
+            for (int i = 2; i <= x; i++)
+            {
+                res *= i;
+            }
+            return res;
+        }
+
         public static BigInteger Factorial(this BigInteger x)
         {
             if (x == 0)

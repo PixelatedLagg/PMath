@@ -7,10 +7,6 @@ class Program
 {
     public static void Main()
     {
-        Console.WriteLine(test(10, 10));
-    }
-    static int test(int x, int y)
-    {
-        return (int)((x * (Math.Pow(10, y) - 1)) / 9);
+        Console.WriteLine(Pi.CalculatePi(100));
     }
 }

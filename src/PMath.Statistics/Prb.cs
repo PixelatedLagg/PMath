@@ -2,7 +2,7 @@ using System.Numerics;
 
 namespace PMath.Statistics
 {
-    public static class Probability
+    public static class Prb
     {
         public static int NCR(int n, int r)
         {
