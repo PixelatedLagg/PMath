@@ -7,6 +7,7 @@ class Program
 {
     public static void Main()
     {
-        Console.WriteLine(Pi.CalculatePi(100));
+        BigDecimal.Precision = 50;
+        Console.WriteLine(Distr.NormalCDF(-1, 0.25, 0, 1));
     }
 }

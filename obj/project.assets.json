@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "ExtendedNumerics.BigDecimal/2023.1000.3.328": {
+      "ExtendedNumerics.BigDecimal/2023.1000.4.35": {
         "type": "package",
         "compile": {
           "lib/net6.0/ExtendedNumerics.BigDecimal.dll": {
@@ -18,15 +18,15 @@
     }
   },
   "libraries": {
-    "ExtendedNumerics.BigDecimal/2023.1000.3.328": {
-      "sha512": "jx72lrIoz3YjN1E0iGidTfX/r05ngMpJ6uMu1DnkL+CymUIcuPT73HYNCx7+Tc2H1nL/cgu3xIv+aPmtWtG6vg==",
+    "ExtendedNumerics.BigDecimal/2023.1000.4.35": {
+      "sha512": "vX8Sr1zREZuVoeFjV0ohdk89nh2aL6Fa2t41WyumjpT8UFlEAZZ2+DqWCQLZZ+YnG06PogYrQBrsBX5LTH3WgA==",
       "type": "package",
-      "path": "extendednumerics.bigdecimal/2023.1000.3.328",
+      "path": "extendednumerics.bigdecimal/2023.1000.4.35",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "extendednumerics.bigdecimal.2023.1000.3.328.nupkg.sha512",
+        "extendednumerics.bigdecimal.2023.1000.4.35.nupkg.sha512",
         "extendednumerics.bigdecimal.nuspec",
         "lib/net45/ExtendedNumerics.BigDecimal.dll",
         "lib/net45/ExtendedNumerics.BigDecimal.xml",
@@ -53,7 +53,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "ExtendedNumerics.BigDecimal >= 2023.1000.3.328"
+      "ExtendedNumerics.BigDecimal >= 2023.1000.4.35"
     ]
   },
   "packageFolders": {
@@ -95,7 +95,7 @@
         "dependencies": {
           "ExtendedNumerics.BigDecimal": {
             "target": "Package",
-            "version": "[2023.1000.3.328, )"
+            "version": "[2023.1000.4.35, )"
           }
         },
         "imports": [

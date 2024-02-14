@@ -40,7 +40,7 @@
           "dependencies": {
             "ExtendedNumerics.BigDecimal": {
               "target": "Package",
-              "version": "[2023.1000.3.328, )"
+              "version": "[2023.1000.4.35, )"
             }
           },
           "imports": [

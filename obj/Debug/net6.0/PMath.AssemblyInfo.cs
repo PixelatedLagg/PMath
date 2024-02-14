@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PMath")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+513bf4f8528fa56878da89f30e1aa26fcfd05608")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d029eff209d9509b71315fdd130c7cb8cdde22ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("PMath")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PMath")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
